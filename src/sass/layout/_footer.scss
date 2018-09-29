@@ -2,9 +2,8 @@ footer	{
 	background-color: $footer-bg-color;
 	font-family: $menu-font-family;
 	padding-top: 30px;
-	padding-bottom: 40px;
-	margin-top: 100px;
-	text-align: right;  
+	padding-bottom: 60px;
+	margin-top: 100px; 
 
 	a {
 		color: $footer-link-color;
@@ -16,6 +15,37 @@ footer	{
 		}
 		&:hover { 
 			color: $footer-link-color-hover;
+		} 
+	}
+	span {
+		display: inline-block;
+		float: right;
+	}
+}
+ul.social {
+	display: inline-block;
+	list-style: none;   
+	margin: 0;
+	padding: 0;
+	float: right;
+
+	li {
+		display: inline-block;
+		float: left;
+		text-align: center; 
+
+		a {
+			color: $footer-link-color;
+			font-size: $footer-font-size;
+			padding: 5px; 
+		    line-height: 1em;
+			
+		    &:hover {
+		    	color: $footer-link-color-hover;
+		    }
 		}
+		&:first-child { 
+				padding-left: 20px;
+			}
 	}
 }

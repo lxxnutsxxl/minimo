@@ -10,6 +10,7 @@ a {
 	color: $link-color;
 	text-decoration: none;
 	text-transform: uppercase;
+    line-height: 45px;
 }
 
 #wrapper {
@@ -28,8 +29,17 @@ main {
 	color: $main-text-color;
 	font-size: $main-font-size; 
 
-	.container {
-		padding-right: 150px;
+	.container .content {
+		padding-right: 140px;
+		padding-top: 45px;
+	}
+
+	.head_banner {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	ul,ol{
@@ -39,6 +49,7 @@ main {
 				color: $main-link-color;
 				text-decoration: underline;
 				text-transform: none;
+			    line-height: 1em;
 			}
 		}
 	}    
@@ -61,8 +72,12 @@ main {
 	p {
 		font-size: $main-font-size; 
 	}
-	blockquote {
-	    margin: 0;
+	q {
+	    margin: 15px 0;
 		text-align: center;
+		display: block;
+		&:before, &:after {
+			content: '';
+		}
 	}
 } 

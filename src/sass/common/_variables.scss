@@ -1,4 +1,24 @@
-$base-font-family: 'ABeeZee', sans-serif;
-$secondary-font-family: 'Merriweather', serif;
+$main-font-family: 	Georgia, sans-serif; 
+$link-font-family: 	Arial, sans-serif;
+$logo-font-family: 'Inconsolata', monospace, sans-serif;
+$menu-font-family: "Times New Roman", sans-serif;
 
-$link-color: red;
+$conteiner-width: 1060; //Ширина контейнера
+$menu-width: $conteiner-width - 180*2; //ширина контейнера минус отступы от контейнера * 2
+$menu-items: 100/4; //100 - % всей ширины, 4 - кол-во пунктов меню
+
+$link-color: #b4ad9e;
+$link-font-size: 14px;
+$hover-link-color: #ea1313;
+
+$header-a-font-size: 30px;
+$header-a-logo-color: black;
+
+$main-text-color: #626262;
+$main-font-size: 14px;
+$main-link-color: red; 
+
+$footer-bg-color: #f0f0f0;
+$footer-link-color: #626262;
+$footer-link-color-hover: #fff;
+$footer-font-size: 15px;

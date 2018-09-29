@@ -1,0 +1,21 @@
+footer	{
+	background-color: $footer-bg-color;
+	font-family: $menu-font-family;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	margin-top: 100px;
+	text-align: right;  
+
+	a {
+		color: $footer-link-color;
+		font-size: $footer-font-size;
+		padding-left: 7px;
+		padding-right: 7px;
+		&:first-child { 
+			padding-left: 20px;
+		}
+		&:hover { 
+			color: $footer-link-color-hover;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+header {
+	padding-top: 80px;
+	padding-bottom: 45px;
+	.logo {
+		text-align: center;
+
+		a {
+			font-family: $logo-font-family;
+			font-size: $header-a-font-size;  
+		    color: $header-a-logo-color;  
+		    letter-spacing: 5px; 
+		}
+	}
+
+	ul {
+		list-style: none;
+		display: block;
+		width: $menu-width+px;
+		margin: 0 auto;
+		padding: 50px 0;
+
+		li {
+			display: inline-block;
+    		float: left;
+    		text-align: center;
+    		width: $menu-items+%;
+
+			a {
+				color: #626262; 
+				font-family: $menu-font-family;
+
+			    &:hover {
+			    	color: $hover-link-color;
+			    }
+			}
+		}
+	}
+	.head_banner {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+}

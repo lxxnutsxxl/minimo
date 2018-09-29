@@ -1,5 +1,15 @@
 body {
-  font-family: $base-font-family;
+  font-family: $main-font-family;
+  background-color: white;
+  line-height: 1.5em;
+}
+
+a {
+	font-family: $link-font-family;
+	font-size: $link-font-size;
+	color: $link-color;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 #wrapper {
@@ -9,40 +19,50 @@ body {
 }
 
 .container {
-	max-width: 1170px;
+	max-width: $conteiner-width+px;
 	padding: 0 15px;
 	margin: 0 auto;
-}
+}  
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-	font-family: $secondary-font-family;
+main {
+	color: $main-text-color;
+	font-size: $main-font-size; 
+
+	.container {
+		padding-right: 150px;
+	}
+
+	ul,ol{
+		padding-inline-start: 15px;
+		li {
+			a {
+				color: $main-link-color;
+				text-decoration: underline;
+				text-transform: none;
+			}
+		}
+	}    
+
+	h1 {
+		font-family: $menu-font-family;
+	}
+	$h-font-size: 36;
+	$h-step-font-size: 6;
+
+	@for $i from 1 through 4 {
+		  h#{$i}{  
+		  	padding: 12px 0;
+		  	margin: 0;
+		    font-size: $h-font-size+px; 
+		    $h-font-size: $h-font-size - $h-step-font-size;
+	 	 }
+	}
+
+	p {
+		font-size: $main-font-size; 
+	}
+	blockquote {
+	    margin: 0;
+		text-align: center;
+	}
 } 
-
-a {
-	font-family: $secondary-font-family;
-	color: $link-color;
-}
-
-.table-holder {
-	overflow-x: auto;
-	max-width: 100%; 
-}
-
-table {
-	border: 2px solid red;
-	empty-cells: hide;
-	margin: 0 auto;
-	table-layout: fixed;
-	min-width: 800px;
-	background-color: blue;
-}
-
-td, th {
-	border: 1px solid red;
-	padding: 10px;
-}
